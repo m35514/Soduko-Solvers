@@ -1,0 +1,38 @@
+# Build products and local IDE state
+/bin/
+/obj/
+/.idea/
+/.codex*/
+/tmp/
+/cmake-build-*/
+*.depend
+*.layout
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+
+# Generated reports, benchmark output, and large execution traces
+/output/
+/results/
+
+# This local dataset exceeds GitHub's regular file-size limit
+/src/data/sudoku_cluewise.csv
+
+# Local credentials and temporary files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.tmp
+~$*
+__pycache__/
+*.pyc
+
+# Executables produced by the Makefile on Unix-like systems
+/src/sudoku_solver
+/src/sudoku_demo
+/src/sudoku_demo_file
+/src/solve_statistics_test

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sudoku_solver" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sudoku_solver" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/sudoku_solver/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sudoku_solver" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/sudoku_solver/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-march=native" />
+					<Add directory="src" />
+				</Compiler>
+			</Target>
+			<Target title="Demo">
+				<Option output="bin/Debug/sudoku_demo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/sudoku_demo/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src" />
+				</Compiler>
+			</Target>
+			<Target title="Master Collection">
+				<Option output="bin/Release/master_collection_runner" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/master_collection_runner/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option working_dir="." />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-march=native" />
+					<Add directory="src" />
+				</Compiler>
+			</Target>
+			<Target title="Demo File">
+				<Option output="bin/Debug/sudoku_demo_file" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/sudoku_demo_file/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option working_dir="." />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-O3" />
+					<Add option="-march=native" />
+					<Add directory="src" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wextra" />
+			<Add option="-std=c++17" />
+		</Compiler>
+		<Linker>
+			<Add option="-static" />
+		</Linker>
+		<Unit filename="src/Makefile" />
+		<Unit filename="src/bitmaskBoard.hpp" />
+		<Unit filename="src/bitmaskCandidateGrid.hpp" />
+		<Unit filename="src/arrayCandidateGrid.hpp" />
+		<Unit filename="src/board.hpp" />
+		<Unit filename="src/candidateGrid.hpp" />
+		<Unit filename="src/candidateSearch.hpp" />
+		<Unit filename="src/data/sudoku_cluewise.csv" />
+		<Unit filename="src/data/SUDOKU Master collection/17_Sudoku.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/17puz49157.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/17puz49158.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Almost Daily Nightmare_400.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/learningcurve_2500.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/No_One_Trick_Ponies_250.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Sudoku_diabolical.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Sudoku_easy.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Sudoku_hard.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Sudoku_medium.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/SUPER160.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Tarek_Pearly6000.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/data/SUDOKU Master collection/Top_50K_Toughest.txt">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/datasetLoader.hpp" />
+		<Unit filename="src/main.cpp">
+			<Option target="Debug;Release" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/demo_main.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Demo" />
+		</Unit>
+		<Unit filename="src/demo_file_main.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/master_collection_main.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Master Collection" />
+		</Unit>
+		<Unit filename="src/solveResult.hpp" />
+		<Unit filename="src/trace/traceEvent.hpp" />
+		<Unit filename="src/trace/jsonWriter.hpp" />
+		<Unit filename="src/trace/jsonWriter.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/solver1.hpp" />
+		<Unit filename="src/solver2.hpp" />
+		<Unit filename="src/solver3.hpp" />
+		<Unit filename="src/arraySolver3.hpp" />
+		<Unit filename="src/arraySolver3.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/solver3.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/solver4.hpp" />
+		<Unit filename="src/arraySolver4.hpp" />
+		<Unit filename="src/arraySolver4.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/solver4.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/solver5.hpp" />
+		<Unit filename="src/arraySolver5.hpp" />
+		<Unit filename="src/arraySolver5.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/solver5.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/cellSelection.hpp" />
+		<Unit filename="src/new stuff/cellSelection.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/HeuristicEngine.hpp" />
+		<Unit filename="src/new stuff/HeuristicEngine.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/hiddenSingle.hpp" />
+		<Unit filename="src/new stuff/hiddenSingle.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/nakedPair.hpp" />
+		<Unit filename="src/new stuff/nakedPair.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/nakedSingle.hpp" />
+		<Unit filename="src/new stuff/nakedSingle.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/placement.hpp" />
+		<Unit filename="src/new stuff/pointingPair.hpp" />
+		<Unit filename="src/new stuff/pointingPair.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/new stuff/xWing.hpp" />
+		<Unit filename="src/new stuff/xWing.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Master Collection" />
+			<Option target="Demo File" />
+		</Unit>
+		<Unit filename="src/treeLogger.hpp" />
+		<Unit filename="src/treeTraversalVisualizer.hpp" />
+		<Unit filename="src/treeTraversalVisualizer.cpp">
+			<Option compilerVar="CPP" />
+			<Option target="Debug;Release;Demo" />
+			<Option target="Demo" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
